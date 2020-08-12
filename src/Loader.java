@@ -65,16 +65,19 @@ public class Loader {
 
                 System.out.println("Вы ввели номер авто!");
 
+                if (!licensePlates.contains(userInput)) System.out.println("Номера в списках НЕТ.\n");
+                else System.out.println("Номер в списках ЕСТЬ.\n");
+
                 start = System.nanoTime();
 
                 if (licensePlates.contains(userInput) && Generator.isCool(userInput)) {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск перебором: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
+                    System.out.println("Поиск перебором: \"крутой\" номер " + FOUND + ", поиск занял " + duration
                             + " наносекунд");
 
                 } else {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск перебором: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
+                    System.out.println("Поиск перебором: \"крутой\" номер " + NOTFOUND + ", поиск занял " + duration
                             + " наносекунд");
                 }
 
@@ -82,12 +85,11 @@ public class Loader {
 
                 if (Collections.binarySearch(licensePlates, userInput) >= 0 && Generator.isCool(userInput)) {
                     duration = System.nanoTime() - start;
-                    System.out.println("Бинарный поиск: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
+                    System.out.println("Бинарный поиск: \"крутой\" номер " + FOUND + ", поиск занял " + duration
                             + " наносекунд");
-
                 } else {
                     duration = System.nanoTime() - start;
-                    System.out.println("Бинарный поиск: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
+                    System.out.println("Бинарный поиск: \"крутой\" номер " + NOTFOUND + ", поиск занял " + duration
                             + " наносекунд");
                 }
 
@@ -95,12 +97,12 @@ public class Loader {
 
                 if (hset.contains(userInput) && Generator.isCool(userInput)) {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск в HashSet: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
+                    System.out.println("Поиск в HashSet: \"крутой\" номер " + FOUND + ", поиск занял " + duration
                             + " наносекунд");
 
                 } else {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск в HashSet: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
+                    System.out.println("Поиск в HashSet: \"крутой\" номер " + NOTFOUND + ", поиск занял " + duration
                             + " наносекунд");
                 }
 
@@ -108,23 +110,20 @@ public class Loader {
 
                 if (tset.contains(userInput) && Generator.isCool(userInput)) {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск в TreeSet: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
+                    System.out.println("Поиск в TreeSet: \"крутой\" номер " + FOUND + ", поиск занял " + duration
                             + " наносекунд");
 
                 } else {
                     duration = System.nanoTime() - start;
-                    System.out.println("Поиск в TreeSet: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
+                    System.out.println("Поиск в TreeSet: \"крутой\" номер " + NOTFOUND + ", поиск занял " + duration
                             + " наносекунд");
                 }
-
-                if (!licensePlates.contains(userInput)) System.out.println("\n\nТАКОГО номера в списке НЕТ.");
-                else System.out.println("\n\nТАКОЙ номер в списке ЕСТЬ.");
 
                 continue;
             }
 
             if (userInput.equals(COMMAND_COOL) || userInput.equals(COMMAND_COOL.toLowerCase())) {
-                System.out.println("\n\n\t\tСписок КРУТЫХ номеров из всех сгенерированных: \n\n");
+                System.out.println("\n\t\tСписок \"крутых\" номеров из всех сгенерированных: \n");
                 coolNum.forEach((a) -> System.out.print(a + " *** "));
             } else if (userInput.equals(COMMAND_LIST) || userInput.equals(COMMAND_LIST.toLowerCase())) {
                 System.out.println("\n\t\tСписок номеров авто: \n");
@@ -191,4 +190,3 @@ class Verify {
 
     }
 }
-
