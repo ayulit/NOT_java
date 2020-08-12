@@ -65,55 +65,56 @@ public class Loader {
 
                 System.out.println("Вы ввели номер авто!");
 
-                start = System.currentTimeMillis();
+                start = System.nanoTime();
 
                 if (licensePlates.contains(userInput) && Generator.isCool(userInput)) {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск перебором: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
 
                 } else {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск перебором: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
                 }
 
-                start = System.currentTimeMillis();
+                start = System.nanoTime();
 
                 if (Collections.binarySearch(licensePlates, userInput) >= 0 && Generator.isCool(userInput)) {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Бинарный поиск: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
+
                 } else {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Бинарный поиск: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
                 }
 
-                start = System.currentTimeMillis();
+                start = System.nanoTime();
 
                 if (hset.contains(userInput) && Generator.isCool(userInput)) {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск в HashSet: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
 
                 } else {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск в HashSet: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
                 }
 
-                start = System.currentTimeMillis();
+                start = System.nanoTime();
 
                 if (tset.contains(userInput) && Generator.isCool(userInput)) {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск в TreeSet: КРУТОЙ номер " + FOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
 
                 } else {
-                    duration = System.currentTimeMillis() - start;
+                    duration = System.nanoTime() - start;
                     System.out.println("Поиск в TreeSet: КРУТОЙ номер " + NOTFOUND + ", поиск занял " + duration
-                            + " милисекунд");
+                            + " наносекунд");
                 }
 
                 if (!licensePlates.contains(userInput)) System.out.println("\n\nТАКОГО номера в списке НЕТ.");
