@@ -15,12 +15,12 @@ public class Loader {
 
         final int MIN = 1;
         final int MAX = 199;
-        int regRND = 1;
+        int regRND;
 
         String str;
 
-        long start = 0;
-        long duration = 0;
+        long start;
+        long duration;
 
         List<String> licensePlates = new ArrayList<>();
 
