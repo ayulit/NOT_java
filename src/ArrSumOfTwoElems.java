@@ -1,28 +1,35 @@
+import java.util.Scanner;
+
 public class ArrSumOfTwoElems {
     public static void main(String[] args) {
-        int max = 0;
+
         int[] arr = new int[7];
+
         System.out.print("Массив => ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10);
-            if (max < arr[i]) {
-                max = arr[i];
-            }
+
             System.out.print(arr[i] + " ");
         }
 
-        System.out.println();
+        System.out.print("\nВведите число: ");
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Элемент с индексом: " + i + " равен: " + arr[i]);
         }
 
-        System.out.println("Максимальное значение равно: " + max
-                + " и его при сложении дают элементы: ");
+        twoSum(arr, input);
+        sc.close();
+    }
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int k = 0; k < arr.length; k++) {
-                if (arr[i] + arr[k] == max && i != k) {
-                    System.out.println("с индексом " + i + " и индексом " + k);
+    public static void twoSum(int[] array, int inp) {
+        System.out.println("Сумма равная " + inp + " получается из элементов с индексами: ");
+        for (int i = 0; i < array.length; i++) {
+            for (int k = 0; k < array.length; k++) {
+                if (array[i] + array[k] == inp && i != k) {
+                    System.out.print("[" + i + "," + k + "]" + " ");
                 }
             }
         }
