@@ -40,15 +40,13 @@ class ArrayInt {
     }
 
     public static boolean isPalindrome(int[] arr) {
-        boolean ispal = false;
+        boolean ispal = true;
         for (int i = 0; i < arr.length / 2; i++) {
-            if (arr[i] != arr[arr.length - 1]) break;
-            else {
-                ispal = true;
-                continue;
+            if (arr[i] != arr[arr.length - 1 - i]) {
+                ispal = false;
+                break;
             }
         }
-
         return ispal;
     }
 }
