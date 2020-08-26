@@ -2,11 +2,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestRunner {
+class TomatTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void sum() {
-        Test underTest = new Test();
+        Tomat underTest = new Tomat();
         int actual = underTest.sum(-121,10);
 
         assertEquals(-111,actual);
@@ -14,9 +14,9 @@ class TestRunner {
 
     @Test
     void sumNew() {
-        Test underTest2 = new Test();
-        int actual = underTest2.sumNew(Integer.MAX_VALUE,1);
+        Tomat underTest = new Tomat();
+        int actual = underTest.sum(Integer.MAX_VALUE,1);
 
-        assertEquals(11,actual);
+        assertEquals(Integer.MIN_VALUE,actual);
     }
 }
