@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class IntegerPalindrome {
     public static void main(String[] args) {
+        ArrayInt arint = new ArrayInt();
         while (true) {
-            System.out.println("Число палиндром? - " + ArrayInt.isPalindrome(ArrayInt.arrFilled()));
+            System.out.println("Число палиндром? - " + arint.isPalindrome(ArrayInt.arrFilled()));
         }
     }
 }
@@ -39,7 +40,7 @@ class ArrayInt {
         return arrayTmp;
     }
 
-    public static boolean isPalindrome(int[] arr) {
+    public boolean isPalindrome(int[] arr) {
         boolean ispal = true;
         for (int i = 0; i < arr.length / 2; i++) {
             if (arr[i] != arr[arr.length - 1 - i]) {
