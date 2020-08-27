@@ -51,3 +51,20 @@ class ArrayInt {
         return ispal;
     }
 }
+class Scratch {
+    public static void main(String[] args)  {
+        try {
+            throw new NotFoundTomatException("Хрень");
+
+        } catch (NotFoundTomatException e){
+            System.out.println("Caught " + e.getMessage());
+
+        }
+    }
+}
+class NotFoundTomatException extends Exception{
+
+    public NotFoundTomatException(String aaa) {
+        super(aaa);
+    }
+}
