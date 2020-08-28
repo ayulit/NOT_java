@@ -1,3 +1,5 @@
+package HomeWorks.Arrays;
+
 public class ArrayReverse {
     public static void main(String[] args) {
         int[] arr = new int[10];

@@ -1,17 +1,23 @@
-public class Square extends Point{
-    //    static int id = 4;
-//    static int count;
-    int lengthSq;
-    final String type = "Квадрат";
+package HomeWorks.Nasledovanie.Test;
 
-    Square(int x, int y, int lengthSq){
+import HomeWorks.Nasledovanie.Test.Point;
+
+public class Rectangle extends Point {
+    //    static int id = 3;
+//    static int count;
+    int length, width;
+    final String type = "Прямоугольник";
+
+    Rectangle (int x, int y, int length, int width){
         super(x,y);
-        this.lengthSq = lengthSq;
+        this.length = length;
+        this.width = width;
     }
 
     public String getType() {
         return type;
     }
+
 //    public int getIdAndCount(){
 //        count++;
 //        System.out.println("Создан объект: " + count);

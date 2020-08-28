@@ -1,19 +1,21 @@
-public class Rectangle extends Point {
-    //    static int id = 3;
-//    static int count;
-    int length, width;
-    final String type = "Прямоугольник";
+package HomeWorks.Nasledovanie.Test;
 
-    Rectangle (int x, int y, int length, int width){
+import HomeWorks.Nasledovanie.Test.Point;
+
+public class Square extends Point {
+    //    static int id = 4;
+//    static int count;
+    int lengthSq;
+    final String type = "Квадрат";
+
+    Square(int x, int y, int lengthSq){
         super(x,y);
-        this.length = length;
-        this.width = width;
+        this.lengthSq = lengthSq;
     }
 
     public String getType() {
         return type;
     }
-
 //    public int getIdAndCount(){
 //        count++;
 //        System.out.println("Создан объект: " + count);

@@ -1,3 +1,5 @@
+package HomeWorks.IntegerReverse;
+
 import java.util.Scanner;
 
 public class IntegerReverse {

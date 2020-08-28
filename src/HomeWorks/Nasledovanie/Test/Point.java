@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test;
+
 public class Point {
     int id = count;
     static int count;

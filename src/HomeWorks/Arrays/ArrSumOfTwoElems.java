@@ -1,3 +1,5 @@
+package HomeWorks.Arrays;
+
 import java.util.Scanner;
 
 public class ArrSumOfTwoElems {
