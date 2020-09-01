@@ -1,6 +1,6 @@
 public abstract class PowerTool implements Commodity{
     int powerConsumption;
-    int count;
+    static int count;
 
     public PowerTool() {
     }
@@ -8,5 +8,8 @@ public abstract class PowerTool implements Commodity{
     public PowerTool(int powerConsumption) {
         this.powerConsumption = powerConsumption;
         count++;
+    }
+    public static int getCount(){
+        return count;
     }
 }

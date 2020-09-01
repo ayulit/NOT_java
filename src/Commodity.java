@@ -6,10 +6,10 @@ public interface Commodity {
     default String getName(){
         return name;
     }
-    default int getCount(){
+    static int getCount(){
         return count;
     }
-    default int getQuantity(){
+    static int getQuantity(){
         return quantity;
     }
 }
