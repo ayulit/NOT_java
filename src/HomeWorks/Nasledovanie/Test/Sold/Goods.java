@@ -1,11 +1,11 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
 public interface Goods {
-    String name = null;
+    Goods name = null;
     int count = 0;
     int quantity = 0;
 
-    default String getName(){
+    default Goods getName(){
         return name;
     }
 

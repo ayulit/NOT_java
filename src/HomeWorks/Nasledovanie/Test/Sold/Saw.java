@@ -2,7 +2,6 @@ package HomeWorks.Nasledovanie.Test.Sold;
 
 public class Saw extends PowerTool implements Returnable {
     double rad;
-    static int count;
     int quantity;
     String name;
     int price;
@@ -23,8 +22,12 @@ public class Saw extends PowerTool implements Returnable {
     }
 
     public boolean hasNeededDocs() {
-        if (order && passport) return true;
-        else return false;
+        if (order && passport) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public int getDay2Return() {

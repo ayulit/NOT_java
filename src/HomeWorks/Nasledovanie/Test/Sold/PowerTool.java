@@ -2,12 +2,11 @@ package HomeWorks.Nasledovanie.Test.Sold;
 
 public abstract class PowerTool implements Goods {
     int powerConsumption;
-    static int count;
 
     public PowerTool() {
     }
 
-    public String getName(){
+    public Goods getName(){
         return name;
     }
 
