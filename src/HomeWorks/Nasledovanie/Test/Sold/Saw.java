@@ -14,6 +14,13 @@ public class Saw extends PowerTool implements Returnable {
         this.price = price;
         quantity++;
     }
+    public Saw(String name, double rad, int powerConsumption, int price, boolean order, boolean passport) {
+        super.powerConsumption = powerConsumption;
+        this.rad = rad;
+        this.name = name;
+        this.price = price;
+        quantity++;
+    }
 
     public boolean hasNeededDocs() {
         if (order && passport) return true;
