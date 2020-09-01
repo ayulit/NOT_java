@@ -1,4 +1,6 @@
-public abstract class Computer implements Commodity{
+package HomeWorks.Nasledovanie.Test.Sold;
+
+public abstract class Computer implements Goods {
     int memory;
     int hardSpace;
     int numberCores;

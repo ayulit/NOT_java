@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test.Sold;
+
 public class JigSaw extends PowerTool{
     double maxW;
 

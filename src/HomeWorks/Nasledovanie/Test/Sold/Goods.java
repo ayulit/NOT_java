@@ -1,4 +1,6 @@
-public interface Commodity {
+package HomeWorks.Nasledovanie.Test.Sold;
+
+public interface Goods {
     String name = null;
     int count = 0;
     int quantity = 0;
@@ -12,4 +14,5 @@ public interface Commodity {
     static int getQuantity(){
         return quantity;
     }
+
 }

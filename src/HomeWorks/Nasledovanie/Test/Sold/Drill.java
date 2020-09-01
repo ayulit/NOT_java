@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test.Sold;
+
 public class Drill extends PowerTool implements Returnable{
     double maxD;
 
@@ -8,7 +10,7 @@ public class Drill extends PowerTool implements Returnable{
         super.powerConsumption = powerConsumption;
         this.maxD = maxD;
     }
-    public boolean getDocs(){
+    public boolean hasNeededDocs(){
         if (order) return true;
         else return false;
     }

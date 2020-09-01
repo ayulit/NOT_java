@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test.Sold;
+
 public class Main {
     public static void main(String[] args) {
 

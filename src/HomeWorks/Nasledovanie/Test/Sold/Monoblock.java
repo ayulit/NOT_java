@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test.Sold;
+
 public class Monoblock extends Computer{
     
     public Monoblock() {

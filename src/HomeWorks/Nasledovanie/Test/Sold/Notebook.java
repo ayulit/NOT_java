@@ -1,3 +1,5 @@
+package HomeWorks.Nasledovanie.Test.Sold;
+
 public class Notebook extends Computer implements Returnable{
     int diag;
     int timeWork;
@@ -11,7 +13,7 @@ public class Notebook extends Computer implements Returnable{
         this.timeWork = timeWork;
     }
 
-    public boolean getDocs(){
+    public boolean hasNeededDocs(){
         if (order && passport) return true;
         else return false;
     }
