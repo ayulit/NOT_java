@@ -8,10 +8,11 @@ public interface Goods {
     default String getName(){
         return name;
     }
+
     static int getCount(){
         return count;
     }
-    static int getQuantity(){
+    default int getQuantity(){
         return quantity;
     }
 

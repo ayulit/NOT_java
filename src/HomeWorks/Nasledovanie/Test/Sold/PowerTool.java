@@ -10,11 +10,17 @@ public abstract class PowerTool implements Goods {
     public PowerTool(int powerConsumption) {
         this.powerConsumption = powerConsumption;
         count++;
+        System.out.println("Электроинструменты (товарная позиция): " + getCount());
     }
+
     public static int getCount(){
         return count;
     }
     public void getGoodsInfo(){
         System.out.println("Наименование: " + name + " количество : " + quantity + " ");
+    }
+
+    public String getName(){
+        return name;
     }
 }

@@ -5,17 +5,14 @@ public class Saw extends PowerTool implements Returnable {
     static int count;
     int quantity;
     String name;
+    int price;
 
-    public Saw() {
-        count++;
-    }
-
-    public Saw(String name, double rad, int powerConsumption) {
+    public Saw(String name, double rad, int powerConsumption, int price) {
         super.powerConsumption = powerConsumption;
         this.rad = rad;
         this.name = name;
-        count++;
-
+        this.price = price;
+        quantity++;
     }
 
     public boolean hasNeededDocs() {
@@ -27,10 +24,6 @@ public class Saw extends PowerTool implements Returnable {
 
         return days2Return * 2;
     }
-    public static int getCount(){
-        return count;
-    }
-//    public void showInfo(){
-//        System.out.println(name,count,quantity,rad,powerConsumption);
-//    }
+
+
 }
