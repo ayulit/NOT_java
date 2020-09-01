@@ -1,4 +1,6 @@
-public class Circle extends Point{
+package HomeWorks.Nasledovanie.Test;
+
+public class Circle extends Point {
     //    static int id = 2;
 //    static int count;
     double rad;

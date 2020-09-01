@@ -1,14 +1,8 @@
+package HomeWorks.Palindrome;
+
 import java.util.Scanner;
 
-public class IntegerPalindrome {
-    public static void main(String[] args) {
-        while (true) {
-            System.out.println("Число палиндром? - " + ArrayInt.isPalindrome(ArrayInt.arrFilled()));
-        }
-    }
-}
-
-class ArrayInt {
+public class ArrayInt {
 
     public static int getInt() {
         Scanner scanner = new Scanner(System.in);
@@ -39,7 +33,7 @@ class ArrayInt {
         return arrayTmp;
     }
 
-    public static boolean isPalindrome(int[] arr) {
+    public boolean isPalindrome(int[] arr) {
         boolean ispal = true;
         for (int i = 0; i < arr.length / 2; i++) {
             if (arr[i] != arr[arr.length - 1 - i]) {
