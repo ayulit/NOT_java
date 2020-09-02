@@ -3,7 +3,7 @@ package HomeWorks.Nasledovanie.Test.Sold;
 public class Drill extends PowerTool implements Returnable {
     double maxD;
     boolean order;
-
+    int quantity;
 
     public Drill(String name, int powerConsumption, double maxD, int price,
                  boolean order) {
@@ -11,6 +11,7 @@ public class Drill extends PowerTool implements Returnable {
         this.maxD = maxD;
         this.order = order;
         quantity++;
+
     }
 
     public boolean hasNeededDocs() {

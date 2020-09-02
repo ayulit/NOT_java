@@ -4,10 +4,10 @@ public class Saw extends PowerTool implements Returnable {
     double rad;
     boolean order;
     boolean passport;
+    int quantity;
 
     public Saw(String name, int powerConsumption, double rad, int price,
                boolean order, boolean passport) {
-
         super.powerConsumption = powerConsumption;
         super.name = name;
         super.price = price;
@@ -15,6 +15,7 @@ public class Saw extends PowerTool implements Returnable {
         this.order = order;
         this.passport = passport;
         quantity++;
+
     }
 
     public String getName() {
