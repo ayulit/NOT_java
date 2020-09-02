@@ -1,12 +1,12 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
-public abstract class PowerTool implements Goods {
+public abstract class PowerTool implements Item {
     int powerConsumption;
 
     public PowerTool() {
     }
 
-    public Goods getName(){
+    public Item getName(){
         return name;
     }
 

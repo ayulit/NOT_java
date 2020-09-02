@@ -1,6 +1,6 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
-public abstract class Computer implements Goods {
+public abstract class Computer implements Item {
     int memory;
     int hardSpace;
     int numberCores;

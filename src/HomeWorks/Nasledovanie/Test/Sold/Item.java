@@ -1,11 +1,11 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
-public interface Goods {
-    Goods name = null;
+public interface Item {
+    Item name = null;
     int count = 0;
     int quantity = 0;
 
-    default Goods getName(){
+    default Item getName(){
         return name;
     }
 
