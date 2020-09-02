@@ -1,22 +1,31 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
-public abstract class PowerTool implements Goods {
+public abstract class PowerTool extends AbstractItem {
     int powerConsumption;
-    static int count;
+
+    static int countPT;
+
 
     public PowerTool() {
+    countPT++;
     }
 
-    public String getName(){
+    public PowerTool(String name, int powerConsumption, int price) {
+        super(name, price);
+        this.powerConsumption = powerConsumption;
+        countPT++;
+
+    }
+
+    public String getName() {
         return name;
     }
 
-    public static int getCount(){
-        return count;
-    }
-
-    public int getQuantity(){
+    public int getQuantity() {
         return quantity;
     }
 
+    public static int getCountPT() {
+        return countPT;
+    }
 }
