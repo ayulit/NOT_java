@@ -1,18 +1,15 @@
 package HomeWorks.Nasledovanie.Test.Sold;
 
 public interface Item {
-    Item name = null;
-    int count = 0;
+    String name = null;
     int quantity = 0;
+    int price = 0;
 
-    default Item getName(){
+    default String getName(){
         return name;
     }
 
-    static int getCount(){
-        return count;
-    }
-    default int getQuantity(){
+    static int getQuantity(){
         return quantity;
     }
 

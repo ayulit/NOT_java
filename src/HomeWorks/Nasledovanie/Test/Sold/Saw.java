@@ -2,23 +2,23 @@ package HomeWorks.Nasledovanie.Test.Sold;
 
 public class Saw extends PowerTool implements Returnable {
     double rad;
-    int quantity;
-    String name;
-    int price;
 
-    public Saw(String name, double rad, int powerConsumption, int price) {
+    public Saw(String name, int powerConsumption, double rad, int price,
+               boolean order, boolean passport) {
+
         super.powerConsumption = powerConsumption;
+        super.name = name;
+        super.price = price;
         this.rad = rad;
-        this.name = name;
-        this.price = price;
         quantity++;
     }
-    public Saw(String name, double rad, int powerConsumption, int price, boolean order, boolean passport) {
-        super.powerConsumption = powerConsumption;
-        this.rad = rad;
-        this.name = name;
-        this.price = price;
-        quantity++;
+
+    public String getName() {
+        return name;
+    }
+
+    static int getQuantity() {
+        return quantity;
     }
 
     public boolean hasNeededDocs() {
