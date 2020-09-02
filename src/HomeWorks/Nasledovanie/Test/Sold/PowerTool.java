@@ -2,16 +2,18 @@ package HomeWorks.Nasledovanie.Test.Sold;
 
 public abstract class PowerTool extends AbstractItem {
     int powerConsumption;
-    int quantity;
+
+    static int countPT;
 
 
     public PowerTool() {
-
+    countPT++;
     }
 
     public PowerTool(String name, int powerConsumption, int price) {
         super(name, price);
         this.powerConsumption = powerConsumption;
+        countPT++;
 
     }
 
@@ -23,4 +25,7 @@ public abstract class PowerTool extends AbstractItem {
         return quantity;
     }
 
+    public static int getCountPT() {
+        return countPT;
+    }
 }

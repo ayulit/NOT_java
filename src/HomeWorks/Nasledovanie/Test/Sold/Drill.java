@@ -22,4 +22,9 @@ public class Drill extends PowerTool implements Returnable {
     public int getDay2Return() {
         return days2Return;
     }
+
+    public String isRet(){
+        if (hasNeededDocs()) return " Документы на возврат есть";
+        else return " Документов на возврат нет";
+    }
 }

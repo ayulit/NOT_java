@@ -40,5 +40,10 @@ public class Saw extends PowerTool implements Returnable {
         }
     }
 
+    public String isRet(){
+        if (hasNeededDocs()) return " Документы на возврат есть";
+        else return " Документов на возврат нет";
+    }
+
 
 }
